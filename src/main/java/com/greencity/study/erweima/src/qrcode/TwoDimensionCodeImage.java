@@ -1,13 +1,11 @@
 package com.greencity.study.erweima.src.qrcode;
 
-import java.awt.image.BufferedImage;
-
 import jp.sourceforge.qrcode.data.QRCodeImage;
 
+import java.awt.image.BufferedImage;
+
 /**
- *
  * @author Carry
- *
  */
 public class TwoDimensionCodeImage implements QRCodeImage {
 

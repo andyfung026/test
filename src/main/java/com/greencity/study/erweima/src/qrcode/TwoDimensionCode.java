@@ -1,34 +1,27 @@
 package com.greencity.study.erweima.src.qrcode;
 
-import java.awt.Color;
-import java.awt.Graphics2D;
+import com.swetake.util.Qrcode;
+import jp.sourceforge.qrcode.QRCodeDecoder;
+import jp.sourceforge.qrcode.exception.DecodingFailedException;
+
+import javax.imageio.ImageIO;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import javax.imageio.ImageIO;
-
-import jp.sourceforge.qrcode.QRCodeDecoder;
-import jp.sourceforge.qrcode.exception.DecodingFailedException;
-
-import com.swetake.util.Qrcode;
-
 /**
- *
  * @author Carry
- *
  */
 public class TwoDimensionCode {
 
     /**
      * 生成二维码(QRCode)图片
      *
-     * @param content
-     *            存储内容
-     * @param imgPath
-     *            图片路径
+     * @param content 存储内容
+     * @param imgPath 图片路径
      */
     public void encoderQRCode(String content, String imgPath) {
         this.encoderQRCode(content, imgPath, "png", 7);
@@ -37,10 +30,8 @@ public class TwoDimensionCode {
     /**
      * 生成二维码(QRCode)图片
      *
-     * @param content
-     *            存储内容
-     * @param output
-     *            输出流
+     * @param content 存储内容
+     * @param output  输出流
      */
     public void encoderQRCode(String content, OutputStream output) {
         this.encoderQRCode(content, output, "png", 7);
@@ -49,12 +40,9 @@ public class TwoDimensionCode {
     /**
      * 生成二维码(QRCode)图片
      *
-     * @param content
-     *            存储内容
-     * @param imgPath
-     *            图片路径
-     * @param imgType
-     *            图片类型
+     * @param content 存储内容
+     * @param imgPath 图片路径
+     * @param imgType 图片类型
      */
     public void encoderQRCode(String content, String imgPath, String imgType) {
         this.encoderQRCode(content, imgPath, imgType, 7);
@@ -63,12 +51,9 @@ public class TwoDimensionCode {
     /**
      * 生成二维码(QRCode)图片
      *
-     * @param content
-     *            存储内容
-     * @param output
-     *            输出流
-     * @param imgType
-     *            图片类型
+     * @param content 存储内容
+     * @param output  输出流
+     * @param imgType 图片类型
      */
     public void encoderQRCode(String content, OutputStream output,
                               String imgType) {
@@ -78,14 +63,10 @@ public class TwoDimensionCode {
     /**
      * 生成二维码(QRCode)图片
      *
-     * @param content
-     *            存储内容
-     * @param imgPath
-     *            图片路径
-     * @param imgType
-     *            图片类型
-     * @param size
-     *            二维码尺寸
+     * @param content 存储内容
+     * @param imgPath 图片路径
+     * @param imgType 图片类型
+     * @param size    二维码尺寸
      */
     public void encoderQRCode(String content, String imgPath, String imgType,
                               int size) {
@@ -103,14 +84,10 @@ public class TwoDimensionCode {
     /**
      * 生成二维码(QRCode)图片
      *
-     * @param content
-     *            存储内容
-     * @param output
-     *            输出流
-     * @param imgType
-     *            图片类型
-     * @param size
-     *            二维码尺寸
+     * @param content 存储内容
+     * @param output  输出流
+     * @param imgType 图片类型
+     * @param size    二维码尺寸
      */
     public void encoderQRCode(String content, OutputStream output,
                               String imgType, int size) {
@@ -126,12 +103,9 @@ public class TwoDimensionCode {
     /**
      * 生成二维码(QRCode)图片的公共方法
      *
-     * @param content
-     *            存储内容
-     * @param imgType
-     *            图片类型
-     * @param size
-     *            二维码尺寸
+     * @param content 存储内容
+     * @param imgType 图片类型
+     * @param size    二维码尺寸
      * @return
      */
     private BufferedImage qRCodeCommon(String content, String imgType, int size) {
@@ -183,8 +157,7 @@ public class TwoDimensionCode {
     /**
      * 解析二维码（QRCode）
      *
-     * @param imgPath
-     *            图片路径
+     * @param imgPath 图片路径
      * @return
      */
     public String decoderQRCode(String imgPath) {
@@ -210,8 +183,7 @@ public class TwoDimensionCode {
     /**
      * 解析二维码（QRCode）
      *
-     * @param input
-     *            输入流
+     * @param input 输入流
      * @return
      */
     public String decoderQRCode(InputStream input) {
