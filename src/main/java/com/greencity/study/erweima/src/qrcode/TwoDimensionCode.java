@@ -1,4 +1,4 @@
-package qrcode;
+package com.greencity.study.erweima.src.qrcode;
 
 import java.awt.Color;
 import java.awt.Graphics2D;
@@ -195,7 +195,7 @@ public class TwoDimensionCode {
         try {
             bufImg = ImageIO.read(imageFile);
             QRCodeDecoder decoder = new QRCodeDecoder();
-            content = new String(decoder.decode(new qrcode.TwoDimensionCodeImage(
+            content = new String(decoder.decode(new TwoDimensionCodeImage(
                     bufImg)), "utf-8");
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
@@ -220,7 +220,7 @@ public class TwoDimensionCode {
         try {
             bufImg = ImageIO.read(input);
             QRCodeDecoder decoder = new QRCodeDecoder();
-            content = new String(decoder.decode(new qrcode.TwoDimensionCodeImage(
+            content = new String(decoder.decode(new TwoDimensionCodeImage(
                     bufImg)), "utf-8");
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());

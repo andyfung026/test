@@ -1,4 +1,4 @@
-package qrcode;
+package com.greencity.study.erweima.src.qrcode;
 
 import java.awt.image.BufferedImage;
 
