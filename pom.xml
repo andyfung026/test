@@ -110,6 +110,16 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
+
+       <!-- 引入lib下jar包，这是生成二维码用的-->
+
+        <dependency>
+            <groupId>com.greencity.lib</groupId>
+            <artifactId>qrcode</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/java/com/greencity/lib/QRCode.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <build>
