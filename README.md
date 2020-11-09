@@ -1,2 +1,2 @@
-# test
-测试创建新仓库
+# SpringBoot_wechatProject
+基于SpringBoot实现的微信点餐系统
