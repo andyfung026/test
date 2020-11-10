@@ -28,8 +28,8 @@ public class HttpDetectiveImpl implements HttpDetective {
     @Autowired
     HttpDetective httpDetective;
 
-    private final int RECORD_TIME=1000;
-    private final int ALLOW_TIMES = 7;
+    private final int RECORD_TIME=6000;
+    private final int ALLOW_TIMES = 100;
     private final int REFUSE_TIME = 180000;
 
     @Override
