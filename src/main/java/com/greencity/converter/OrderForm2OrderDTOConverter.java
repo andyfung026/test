@@ -30,7 +30,7 @@ public class OrderForm2OrderDTOConverter {
         orderDTO.setBuyerOpenid(orderFrom.getOpenId());
         List<OrderDetail> orderDetailList = new ArrayList<>();
         try {
-            orderDetailList=gson.fromJson(orderFrom.getItems(),
+            orderDetailList = gson.fromJson(orderFrom.getItems(),
                     new TypeToken<List<OrderDetail>>() {
                     }.getType());
         } catch (Exception e) {

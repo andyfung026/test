@@ -15,8 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -38,7 +36,7 @@ public class BuyerProductController {
     public ResultVO list() {
         //查询所有的上架商品
         List<ProductInfo> productInfoList = productInfoService.findAll();
-        List<Integer> categoryList =productInfoList.stream()
+        List<Integer> categoryList = productInfoList.stream()
                 .map(m -> m.getCategoryType())
                 .collect(Collectors.toList());
 
@@ -52,7 +50,7 @@ public class BuyerProductController {
             productVO.setCategoryName(productCategory.getCategoryName());
 
             List<ProductInfoVO> productInfoVOList = new ArrayList<>();
-            for (ProductInfo productInfo: productInfoList) {
+            for (ProductInfo productInfo : productInfoList) {
                 if (productInfo.getCategoryType().equals(productCategory.getCategoryType())) {
                     ProductInfoVO productInfoVO = new ProductInfoVO();
                     //把对象复制过来

@@ -21,12 +21,11 @@ public enum ResultEnum {
 
     PARAM_REEOR(20, "参数不正确"),
 
-    CART_EMPTY(30,"购物车不能为空"),
+    CART_EMPTY(30, "购物车不能为空"),
 
-    ORDER_OWNER_ERROR(40,"该订单不属于当前用户"),
+    ORDER_OWNER_ERROR(40, "该订单不属于当前用户"),
 
-    WE_MP_ERROR(18, "微信公众号有错")
-    ;
+    WE_MP_ERROR(18, "微信公众号有错");
 
     private Integer code;
 

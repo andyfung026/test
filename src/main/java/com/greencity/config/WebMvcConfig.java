@@ -21,6 +21,6 @@ public class WebMvcConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         System.out.println("添加拦截器");
         registry.addInterceptor(handlerInterceptor)
-        .addPathPatterns("/**");
+                .addPathPatterns("/**");
     }
 }

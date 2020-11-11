@@ -7,12 +7,9 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.security.AllPermission;
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Handler;
 
 /**
  * @author AndyFung
