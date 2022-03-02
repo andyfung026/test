@@ -39,8 +39,9 @@ public class PalindromicNumber {
 //        return false;
 
 
-        if(number < 0)
+        if(number < 0){
             return false;
+        }
         int cur = 0;
         int num = number;
         while(num != 0) {
