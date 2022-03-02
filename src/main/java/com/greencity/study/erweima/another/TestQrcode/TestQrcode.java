@@ -48,7 +48,7 @@ public class TestQrcode {
         }
         gs.dispose();
         bufImg.flush();
-        File imgFile = new File("D:\\test.png");
+        File imgFile = new File("D:\\test1.png");
         // 生成二维码QRCode图片
 
         try {

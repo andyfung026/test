@@ -14,3 +14,11 @@ public class WhileTest {
         }
     }
 }
+
+
+class whileTest1{
+    public static void main(String[] args) {
+
+
+    }
+}

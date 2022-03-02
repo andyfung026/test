@@ -11,13 +11,13 @@ public class test4 {
 
         int s = 15;
         int[] nums = {2, 3, 1, 2, 4, 3};
-        System.out.println(new test4().minSubArrayLen(s,nums));
+        System.out.println(new test4().minSubArrayLen(s, nums));
     }
 
     public int minSubArrayLen(int s, int[] nums) {
         boolean flag = true;
         int minOfLength = s;
-        int sum=0;
+        int sum = 0;
         int left = 0;
         for (int i = 0; i < nums.length; i++) {
             sum = sum + nums[i];
@@ -30,7 +30,9 @@ public class test4 {
                 left++;
             }
         }
-        if(flag) return 0;
+        if (flag) {
+            return 0;
+        }
         return minOfLength;
     }
 }
